@@ -1,0 +1,721 @@
+
+/* .nav-bottom{
+    border-color: color-mix(in oklch, var(--bs-black) 48%, oklch(60% 0.02 245deg));
+} */
+
+@font-face {
+    font-family: "Chakra Petch";
+    src: url("../fonts/ChakraPetch-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Days One";
+    src: url("../fonts/DaysOne-Regular.ttf");
+}
+
+:root {
+    scrollbar-gutter: auto;
+    --main-color: #CBFE1C;
+}
+
+body {
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.max-width-80rem {
+    max-width: 80rem;
+}
+
+.h-64 {
+    height: calc(.25rem * 64);
+}
+
+.h-80 {
+    height: calc(.25rem * 80);
+}
+
+.w-16 {
+    width: calc(.25rem*16);
+}
+
+.h-5 {
+    height: calc(.25rem * 5);
+}
+
+.w-5 {
+    width: calc(.25rem*5);
+}
+
+.h-16 {
+    height: calc(.25rem*16);
+}
+
+.w-24 {
+    width: calc(.25rem*24);
+}
+
+
+.h-24 {
+    height: calc(.25rem*24);
+}
+
+.days-one {
+    font-family: "Days One", sans-serif;
+}
+
+.web-color {
+    color: var(--main-color);
+}
+
+.background-web-color {
+    background-color: var(--main-color);
+}
+
+.ul-style-none
+{
+    list-style-type: none;
+}
+
+/* Nav Bar Section */
+
+.header {
+    border-color: oklch(27.8% .033 256.848);
+}
+
+.logo-name {
+    color: var(--main-color);
+}
+
+.sign-in-btn {
+    background-color: var(--main-color);
+}
+
+.sign-in-btn::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0));
+    ;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: 0.6s;
+}
+
+.sign-in-btn:hover {
+    background-color: #A4CE1A;
+}
+
+.sign-in-btn:hover::before {
+    left: 100%;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--main-color);
+}
+
+.nav-icon:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+/* Hero Section */
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .87), rgba(0, 0, 0, .87)),
+        url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: calc(.25rem*45);
+    padding-bottom: calc(.25rem*16);
+    background-attachment: fixed;
+}
+
+.hero .container h2 {
+    font-family: "Days One", sans-serif;
+    line-height: 1.25;
+}
+
+.hero .container h2 span {
+    color: var(--main-color);
+}
+
+.hero-btn1 {
+    background-color: var(--main-color);
+}
+
+.hero-btn1::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0));
+    ;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: 0.6s;
+}
+
+.hero-btn1:hover {
+    background-color: #A4CE1A;
+}
+
+.hero-btn1:hover::before {
+    left: 100%;
+}
+
+.hero-btn2 {
+    color: var(--main-color);
+    background-color: transparent;
+    border-color: var(--main-color);
+}
+
+.hero-btn2::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0));
+    ;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: 0.6s;
+}
+
+.hero-btn2:hover {
+    background-color: var(--main-color);
+    color: black;
+}
+
+.hero-btn2:hover::before {
+    left: 100%;
+}
+
+.hero .image-holder {
+    background-image: linear-gradient(to right, var(--main-color), oklch(79.2% .209 151.711));
+}
+
+.hero .fds {
+    background-color: #0B0E13;
+    transform: translate(-12%, 24%);
+}
+
+.hero .trophy-icon {
+    color: var(--main-color);
+}
+
+
+/* Our Games Section */
+
+.our-games {
+    padding: calc(.25rem*24) 0;
+}
+
+.our-games .p-title {
+    color: var(--main-color);
+}
+
+.our-games .p-title::before {
+    content: "";
+    width: 5%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background: linear-gradient(to right, transparent, #cbfe1c);
+}
+
+.our-games .p-title::after {
+    content: "";
+    width: 5%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    background: linear-gradient(to right, #cbfe1c, transparent);
+}
+
+
+.our-games .h2-title {
+    font-family: "Days One", sans-serif;
+}
+
+.carousel button {
+    transition: all .3s;
+}
+
+
+.carousel .left-arrow:hover {
+    border-color: var(--main-color);
+}
+
+.carousel .left-arrow:hover .left-arrow-icon {
+    color: var(--main-color);
+}
+
+.carousel .right-arrow:hover {
+    border-color: var(--main-color);
+}
+
+.carousel .right-arrow:hover .right-arrow-icon {
+    color: var(--main-color);
+}
+
+.carousel .carousel-btn {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+.carousel .carousel-btn:hover {
+    background-color: var(--main-color);
+    color: black;
+}
+
+
+
+.carousel .img {
+    transition: all .5s;
+}
+
+.carousel .game-card:hover img {
+    transform: scale(1.1);
+}
+
+.carousel .game-card:hover {
+    border: 2px solid var(--main-color);
+}
+
+
+
+
+.carousel .game-card::after {
+    content: "";
+    background: linear-gradient(to top, var(--main-color), transparent);
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.carousel .game-card:hover::after {
+    opacity: .6;
+}
+
+.carousel .spans span {
+    background-color: rgba(0, 0, 0, .5);
+
+}
+
+.carousel .spans span .i {
+    color: var(--main-color);
+}
+
+.carousel .spans {
+    top: -10%;
+    left: 5%;
+    transition: transform .3s ease;
+}
+
+.carousel .game-card:hover .spans {
+    transform: translate(0, 170%);
+}
+
+.carousel h3 {
+    bottom: -17%;
+    left: 0;
+    transition: transform .3s ease;
+    z-index: 1;
+}
+
+.carousel .game-card:hover h3 {
+    transform: translate(0, -50%);
+
+}
+
+.carousel .special-h3 {
+    bottom: -25%;
+    left: 0;
+    transition: transform .3s ease;
+    z-index: 1;
+}
+
+.carousel .game-card:hover .special-h3 {
+    transform: translate(0, -65%);
+
+}
+
+.w-350px {
+    height: 350px;
+}
+
+
+/* Waht We Do Section */
+
+.what-we-do {
+    padding: calc(.25rem*24) 0 calc(.25rem*12) 0;
+}
+
+.what-we-do .p-title {
+    color: var(--main-color);
+}
+
+.what-we-do .p-title::before {
+    content: "";
+    width: 5%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background: linear-gradient(to right, transparent, #cbfe1c);
+}
+
+.what-we-do .p-title::after {
+    content: "";
+    width: 5%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    background: linear-gradient(to right, #cbfe1c, transparent);
+}
+
+
+.what-we-do .h2-title {
+    font-family: "Days One", sans-serif;
+}
+
+.what-we-do .p-title-2 span {
+    color: var(--main-color);
+}
+
+.what-we-do .icon-holder {
+    background-color: #1E2939;
+    color: var(--main-color);
+}
+
+
+.what-we-do h3 {
+    font-family: "Days One", sans-serif;
+}
+
+.what-we-do .inner {
+    background-color: #1A1A1A;
+}
+
+
+.what-we-do .inner:hover {
+    border-color: var(--main-color);
+    transition: all .3s;
+}
+
+
+.what-we-do .inner:hover .icon-holder {
+    color: black;
+    background-color: var(--main-color);
+    transition: all .3s;
+}
+
+.what-we-do .inner::before {
+    content: "";
+    width: 0;
+    height: 0;
+    top: -15px;
+    left: -15px;
+    position: absolute;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid var(--main-color);
+}
+
+.what-we-do .inner:hover::before {
+    transform: translate(110%, 110%);
+    transition: all .3s;
+}
+
+.what-we-do .inner::after {
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: -15px;
+    right: -15px;
+    position: absolute;
+    border-bottom: 25px solid var(--main-color);
+    border-left: 25px solid transparent;
+}
+
+.what-we-do .inner:hover::after {
+    transform: translate(-110%, -110%);
+    transition: all .3s;
+}
+
+.what-we-do::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 40%;
+    height: 2px;
+    box-shadow: 0 0 10px var(--main-color), 0 0 20px #cbfe1c4d;
+    background: linear-gradient(90deg, transparent, var(--main-color) 20%, var(--main-color) 80%, transparent);
+}
+
+/* Sponsers Section */
+
+.sponsers {
+    padding: calc(.25rem*20) 0;
+}
+
+.sponsers .first-row {
+    animation: 20s linear infinite scroll-left;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.sponsers .second-row {
+    animation: 20s linear infinite scroll-right;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.sponsers .left-fade {
+    width: calc(.25rem * 32);
+    background: linear-gradient(to right, oklch(21% .034 264.665), transparent);
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.sponsers .right-fade {
+    width: calc(.25rem * 32);
+    background: linear-gradient(to right, transparent, oklch(21% .034 264.665));
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.sponsers .effect {
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 350px;
+    background: radial-gradient(in srgb, color-mix(var(--main-color) 85%, transparent) 0%, transparent 70%);
+    z-index: -1;
+}
+
+/* Our Team Section */
+
+.our-team {
+    padding: calc(.25rem*24) 0;
+}
+
+.our-team .p-title {
+    color: var(--main-color);
+}
+
+.our-team .p-title::before {
+    content: "";
+    width: 5%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background: linear-gradient(to right, transparent, #cbfe1c);
+}
+
+.our-team .p-title::after {
+    content: "";
+    width: 5%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    background: linear-gradient(to right, #cbfe1c, transparent);
+}
+
+
+.our-team .h2-title {
+    font-family: "Days One", sans-serif;
+}
+
+.our-team .right-word {
+    transform: rotate(90deg);
+}
+
+.our-team .team-details::after {
+    content: "";
+    inset: 0;
+    position: absolute;
+    backdrop-filter: grayscale(100%);
+    transform: translateY(0);
+    transition: all .8s;
+
+
+}
+
+.our-team .team-details:hover::after {
+    transform: translateY(-100%);
+    cursor: pointer;
+}
+
+
+/* Contact Us Section */
+
+.contact-us{
+    background-color: #0F1521;
+    padding: calc(.25rem * 24) 0;
+}
+
+.contact-us .p-title {
+    color: var(--main-color);
+}
+
+.contact-us .p-title::before {
+    content: "";
+    width: 5%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background: linear-gradient(to right, transparent, #cbfe1c);
+}
+
+.contact-us .p-title::after {
+    content: "";
+    width: 5%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    background: linear-gradient(to right, #cbfe1c, transparent);
+}
+
+
+.contact-us .h2-title {
+    font-family: "Days One", sans-serif;
+}
+
+.contact-us .par
+{
+    background-color: #1E2939;
+}
+
+.contact-us .last-par
+{
+    background: linear-gradient(to right, var(--main-color), oklch(79.2% .209 151.711));
+}
+
+.contact-us .right-side .inner
+{
+    background-color: #1E2939;
+
+}
+
+.contact-us form input, select, textarea
+{
+    background-color: #364153;
+}
+
+.contact-us .i:hover
+{
+    opacity: .6;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.contact-us input:focus
+{
+    outline: none;
+    border: 2px solid var(--main-color);
+}
+
+.contact-us select:focus
+{
+    outline: none;
+    border: 2px solid var(--main-color);
+}
+
+.contact-us textarea:focus
+{
+    outline: none;
+    border: 2px solid var(--main-color);
+}
+
+.form-btn {
+    background-color: var(--main-color);
+}
+
+.form-btn::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0));
+    ;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: 0.6s;
+}
+
+.form-btn:hover {
+    background-color: #A4CE1A;
+}
+
+.form-btn:hover::before {
+    left: 100%;
+}
+
+
+/* Footer Section */
+
+.footer
+{
+    padding: calc(.25rem*16) 0;
+    background-color: #000000;
+}
+
+.footer .icons .i:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.footer ul li:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.footer a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+
+
+
+@media (min-width: 576px) {
+    .sm\:h-80 {
+        height: 20rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:h-96 {
+        height: 24rem;
+    }
+}
